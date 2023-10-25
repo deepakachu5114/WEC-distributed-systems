@@ -28,9 +28,9 @@ All the 3 functions (read/write/update) do the following:
 All the steps above are performed by the thread while having acquired a lock at step 1 and releasing it after step 5.
 This lock is the reason why we do not need to explicitly have a mechanism to rule out causal anomalies, the lock makes sure that the events are casually consistent.
 
----
+<br>
 NOTE: THE CONTENT BELOW WAS ADDED AFTER THE DEADLINE, FOR MORE CLARITY. THE CODE HASN'T BEEN MODIFIED IN ANY WAY.
----
+<br>
 
 
 ## Code flow and how the code maintains causal consistency
