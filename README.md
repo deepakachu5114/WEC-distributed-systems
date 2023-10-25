@@ -11,7 +11,7 @@ Run the Python file (preferably on an IDE) and follow these steps:
 - When prompted to enter the TOTAL number of operations, again enter any number BIGGER than the number of clients to ensure smooth running of the program.
 
 ## Brief overview 
-### This section explains what the program does on the whole, we will explore the nitty gritties in sections after this
+### This section provides an overview of the program's functionality as a whole. We will delve into the finer details in subsequent sections.
 
 Every `client` is an instance of the `CLient` class, each `client` has a corresponding _file_ and a _thread_, and other attributes.
 A `client` thread will make changes into the client's corresponding file through the function `run_client`.
@@ -28,7 +28,10 @@ All the 3 functions (read/write/update) do the following:
 All the steps above are performed by the thread while having acquired a lock at step 1 and releasing it after step 5.
 This lock is the reason why we do not need to explicitly have a mechanism to rule out causal anomalies, the lock makes sure that the events are casually consistent.
 
+---
 NOTE: THE CONTENT BELOW WAS ADDED AFTER THE DEADLINE, FOR MORE CLARITY. THE CODE HASN'T BEEN MODIFIED IN ANY WAY.
+---
+
 
 ## Code flow and how the code maintains causal consistency
 ### Here we will take a deeper look at how the code works and is designed to maintain causal consistency
