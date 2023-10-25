@@ -1,7 +1,7 @@
 # WEC-distributed-systems
 Task submission for WEC systems recruitment
 
-Deepak C Nayak 
+Deepak C Nayak <br>
 Sophomore, AI
 
 ## How to run the file
